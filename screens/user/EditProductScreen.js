@@ -94,7 +94,7 @@ EditProductScreen.navigationOptions = navData => {
     headerTitle: navData.navigation.getParam('productId')
       ? 'Edit Product'
       : 'Add Product',
-    headerRight: (
+    headerRight: () => (
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title="Save"
